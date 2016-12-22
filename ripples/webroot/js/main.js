@@ -2,7 +2,7 @@ var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 
 // CHANGE LOCALHOST TO YOUR IP HERE
-var ws = new WebSocket("ws://localhost:8080/entry");
+var ws = new WebSocket("ws://128.179.136.71:8080/entry");
 
 var circles = [];
 
