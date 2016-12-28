@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"./chat"
+	"github.com/louismerlin/poliwhirl/ripples/chat"
 )
 
 func main() {
