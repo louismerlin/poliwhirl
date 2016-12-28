@@ -1,0 +1,6 @@
+version: '2'
+services:
+  ripples:
+    build: ./
+    ports:
+      - "8083:80"
