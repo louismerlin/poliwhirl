@@ -1,7 +1,8 @@
 canvas {
+	top: 50px;
 	border: 1px solid blue;
-	width: 90%;
-	left: 5%;
+	width: 84%;
+	left: 8%;
 	position: absolute;
 	image-rendering: optimizeSpeed;
 	image-rendering: -moz-crisp-edges;
