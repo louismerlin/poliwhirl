@@ -1,8 +1,13 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
+var fs = document.getElementById("fullscreen");
+
+fs.onclick = function() {
+	canvas.requestFullscreen();
+}
 
 // CHANGE LOCALHOST TO YOUR IP HERE
-var ws = new WebSocket("ws://localhost:8080/entry");
+var ws = new WebSocket("ws:localhost:8080/entry");
 
 var circles = [];
 
@@ -37,6 +42,8 @@ function drawGreenie(lat, lon, x) {
 
 function sixtyfps() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.fillStyle = "white";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	circles.forEach(function(c) {
 		drawGreenie(c[0], c[1], c[2]);
