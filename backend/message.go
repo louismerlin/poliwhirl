@@ -1,4 +1,4 @@
-package chat
+package backend
 
 type Message struct {
 	Lat int `json:"lat"`

@@ -1,4 +1,4 @@
-package chat
+package backend
 
 import (
 	"fmt"

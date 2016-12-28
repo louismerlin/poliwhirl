@@ -4,14 +4,14 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/louismerlin/poliwhirl/ripples/chat"
+	"github.com/wakeupcoffee/ripples/backend"
 )
 
 func main() {
 	log.SetFlags(log.Lshortfile)
 
 	// websocket server
-	server := chat.NewServer("/entry")
+	server := backend.NewServer("/entry")
 	go server.Listen()
 
 	// static files
