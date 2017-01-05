@@ -7,7 +7,7 @@ fs.onclick = function() {
 }
 
 // CHANGE LOCALHOST TO YOUR IP HERE
-var ws = new WebSocket("ws:128.179.138.62:8080/entry");
+var ws = new WebSocket("ws:localhost:8084/entry");
 
 var circles = [];
 

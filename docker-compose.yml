@@ -3,4 +3,4 @@ services:
   ripples:
     build: ./
     ports:
-      - "8080:8084"
+      - "8084:8080"
