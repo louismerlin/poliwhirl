@@ -1,6 +1,10 @@
 version: '2'
 services:
-  ripples:
-    build: ./
+  web:
+    build: ./web
     ports:
-      - "8084:8080"
+      - "8080:80"
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"

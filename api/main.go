@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/wakeupcoffee/ripples/backend"
+	"github.com/wakeupcoffee/ripples/api/backend"
 )
 
 func main() {
