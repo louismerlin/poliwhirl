@@ -7,7 +7,7 @@ fs.onclick = function() {
 }
 
 // CHANGE LOCALHOST TO YOUR IP HERE
-var ws = new WebSocket("ws:ripples.wakeup.coffee:8084/entry");
+var ws = new WebSocket("ws:ripples.wakeup.coffee/entry");
 
 var circles = [];
 
@@ -83,4 +83,3 @@ canvas.addEventListener("mousedown", function (e) {
 	p = getRealPos(e, canvas);
 	ws.send(JSON.stringify(p));
 }, false);
-
