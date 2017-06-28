@@ -7,7 +7,7 @@ fs.onclick = function() {
 }
 
 // CHANGE LOCALHOST TO YOUR IP HERE
-var ws = new WebSocket("ws:ripples.wakeup.coffee/entry");
+var ws = new WebSocket("ws:ripples.wakeup.coffee/entry/");
 
 var circles = [];
 
