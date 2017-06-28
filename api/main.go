@@ -11,7 +11,7 @@ func main() {
 	log.SetFlags(log.Lshortfile)
 
 	// websocket server
-	server := backend.NewServer("/")
+	server := backend.NewServer("/entry/")
 	go server.Listen()
 
 	log.Fatal(http.ListenAndServe(":8085", nil))
